@@ -23,7 +23,7 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 0px 20px;
   display: flex;
   /* place-items: center; */
   min-width: 320px;
@@ -38,7 +38,7 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.3em 0.7em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -65,4 +65,16 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

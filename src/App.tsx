@@ -1,13 +1,20 @@
-function App() {
+import { Outlet } from 'react-router-dom'
+import { Nav } from './components/nav'
+
+export function App() {
   return (
-    <>
-      <h1>vite-bun-biome-react</h1>
-      <h1>vite-bun-biome-react</h1>
-      <h1>vite-bun-biome-react</h1>
-      <h1>vite-bun-biome-react</h1>
-      <h1>vite-bun-biome-react</h1>
-    </>
+    <div
+      style={{
+        display: 'flex',
+        gap: '12px',
+        padding: '30px',
+        width: '100%',
+        flexDirection: 'column',
+      }}
+    >
+      <h2>Clients</h2>
+      <Nav />
+      <Outlet />
+    </div>
   )
 }
-
-export default App
